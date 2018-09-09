@@ -4,12 +4,21 @@ let newDiv = document.createElement('div');
 
 
 function createGrid(gridAmount) {
-	gridAmount = prompt('Enter grid amount:', 16)
 	for (let i = 1; i <= gridAmount; i++) {
-			let div = document.createElement('div');
-			div.classList.add('square');
-			container.appendChild(div);
+			const row = document.createElement('div');
+			row.classList.add('square')
+			container.appendChild(row);
+			for (let j = 0; j <= gridAmount; j++) {
+				const square = document.createElement('div');
+				square.classList.add('square');
+				row.appendChild(square);
+		}
 	}
 }
 
-createGrid()
+function getSize() {
+	gridAmount = prompt("Enter a grid amount: ", 16);
+	createGrid(gridAmount);
+}
+
+getSize();
