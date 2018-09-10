@@ -3,15 +3,16 @@
 }
 
 .square {
-	border: 1px solid black;
-	height: 20px;
-	
-
+	display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;	
 }
 
 .container {
-	height: 50%;
-	width: 50%;
+	height: 500px;
+	width: 960px;
+	font-size: 0;
 	margin: auto;
-	display: grid;
 }
+
+
