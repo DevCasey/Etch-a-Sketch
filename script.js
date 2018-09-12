@@ -32,6 +32,10 @@ document.getElementById('btn2').textContent = "Change Grid Size";
 
 btn2.addEventListener('click', changeGrid);
 function changeGrid() {
+	/*const destroyChild = document.getElementsByClassName('square');
+	destroyChild[0].parentNode.removeChild(destroyChild[0]);*/
+	container.innerHTML = null;
+	getSize();
 }
 	
 
@@ -55,15 +59,11 @@ function getColor(event) {
   	console.log('Not colored');
     return;
   }
-  /*const square = event.target;
+  const square = event.target;
   const red = Math.floor((Math.random() * 256) + 1);
   const green = Math.floor((Math.random() * 256) + 1);
   const blue = Math.floor((Math.random() * 256) + 1);
-  return square.style.backgroundColor = `rgb(${red},${green},${blue})`;*/
-  const square = event.target;
-  const red = 0;
-  const green = 0;
-  const blue = 0;
+  return square.style.backgroundColor = `rgb(${red},${green},${blue})`;
   return square.style.backgroundColor = `rgb(${red},${green},${blue})`;
 }
 
