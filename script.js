@@ -32,6 +32,7 @@ document.getElementById('btn2').textContent = "Change Grid Size";
 
 btn2.addEventListener('click', changeGrid);
 function changeGrid() {
+}
 	
 
 
@@ -75,4 +76,3 @@ function getSize() {
 
 
 getSize();
-
