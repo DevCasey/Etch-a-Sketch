@@ -13,6 +13,10 @@
 	width: 960px;
 	font-size: 0;
 	margin: auto;
+	text-align: center;
 }
 
+.reset {
+	text-align: center;
+}
 
